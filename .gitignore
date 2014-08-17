@@ -26,3 +26,9 @@ Makefile*
 # QtCreator
 
 *.autosave
+
+# Rtractor
+.moc
+.ui
+.obj
+rtractor

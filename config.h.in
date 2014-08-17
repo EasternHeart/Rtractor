@@ -1,0 +1,216 @@
+/* src/config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Define if debugging is enabled. */
+#undef CONFIG_DEBUG
+
+/* Define if DSSI header is available. */
+#undef CONFIG_DSSI
+
+/* Define if IEEE 32bit float optimizations are enabled. */
+#undef CONFIG_FLOAT32
+
+/* Define if gradient eye-candy is enabled. */
+#undef CONFIG_GRADIENT
+
+/* Define if JACK latency support is available. */
+#undef CONFIG_JACK_LATENCY
+
+/* Define if JACK session support is available. */
+#undef CONFIG_JACK_SESSION
+
+/* Define if LADSPA header is available. */
+#undef CONFIG_LADSPA
+
+/* Define if liblilv is available. */
+#undef CONFIG_LIBLILV
+
+/* Define if liblo is available. */
+#undef CONFIG_LIBLO
+
+/* Define if libmad is available. */
+#undef CONFIG_LIBMAD
+
+/* Define if librubberband is available. */
+#undef CONFIG_LIBRUBBERBAND
+
+/* Define if libsamplerate is available. */
+#undef CONFIG_LIBSAMPLERATE
+
+/* Define if libsuil is available. */
+#undef CONFIG_LIBSUIL
+
+/* Define if libvorbis is available. */
+#undef CONFIG_LIBVORBIS
+
+/* Define if libz is available. */
+#undef CONFIG_LIBZ
+
+/* Define if LV2 headers are available. */
+#undef CONFIG_LV2
+
+/* Define if LV2 Atom/MIDI aupport is available. */
+#undef CONFIG_LV2_ATOM
+
+/* Define if LV2 Buf-size is supported. */
+#undef CONFIG_LV2_BUF_SIZE
+
+/* Define if LV2 Event/MIDI support is available. */
+#undef CONFIG_LV2_EVENT
+
+/* Define if LV2 External UI extension is available. */
+#undef CONFIG_LV2_EXTERNAL_UI
+
+/* Define if LV2 Options is supported. */
+#undef CONFIG_LV2_OPTIONS
+
+/* Define if LV2 Presets are supported. */
+#undef CONFIG_LV2_PRESETS
+
+/* Define if LV2 Programs extension is available. */
+#undef CONFIG_LV2_PROGRAMS
+
+/* Define if LV2 State extension is available. */
+#undef CONFIG_LV2_STATE
+
+/* Define if LV2 State Files feature is available. */
+#undef CONFIG_LV2_STATE_FILES
+
+/* Define if LV2 Time/position is supported. */
+#undef CONFIG_LV2_TIME
+
+/* Define if LV2 UI support is available. */
+#undef CONFIG_LV2_UI
+
+/* Define if LV2 Worker/Schedule aupport is available. */
+#undef CONFIG_LV2_WORKER
+
+/* Define if NSM support is available. */
+#undef CONFIG_NSM
+
+/* Default installation prefix. */
+#undef CONFIG_PREFIX
+
+/* Define if round is available. */
+#undef CONFIG_ROUND
+
+/* Define if debugger stack-trace is enabled. */
+#undef CONFIG_STACKTRACE
+
+/* Define if suil_instance_get_handle is available. */
+#undef CONFIG_SUIL_INSTANCE_GET_HANDLE
+
+/* Define if VeSTige header is available. */
+#undef CONFIG_VESTIGE
+
+/* Define if VST header is available. */
+#undef CONFIG_VST
+
+/* Define if X11 unique/single instance is enabled. */
+#undef CONFIG_XUNIQUE
+
+/* Define to 1 if you have the <fcntl.h> header file. */
+#undef HAVE_FCNTL_H
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 if you have the `m' library (-lm). */
+#undef HAVE_LIBM
+
+/* Define to 1 if you have the `X11' library (-lX11). */
+#undef HAVE_LIBX11
+
+/* Define to 1 if you have the `Xext' library (-lXext). */
+#undef HAVE_LIBXEXT
+
+/* Define to 1 if you have the <lv2_atom_helpers.h> header file. */
+#undef HAVE_LV2_ATOM_HELPERS_H
+
+/* Define to 1 if you have the <lv2/lv2plug.in/ns/ext/atom/atom.h> header
+   file. */
+#undef HAVE_LV2_LV2PLUG_IN_NS_EXT_ATOM_ATOM_H
+
+/* Define to 1 if you have the
+   <lv2/lv2plug.in/ns/ext/data-access/data-access.h> header file. */
+#undef HAVE_LV2_LV2PLUG_IN_NS_EXT_DATA_ACCESS_DATA_ACCESS_H
+
+/* Define to 1 if you have the <lv2/lv2plug.in/ns/ext/event/event.h> header
+   file. */
+#undef HAVE_LV2_LV2PLUG_IN_NS_EXT_EVENT_EVENT_H
+
+/* Define to 1 if you have the <lv2/lv2plug.in/ns/ext/event/event-helpers.h>
+   header file. */
+#undef HAVE_LV2_LV2PLUG_IN_NS_EXT_EVENT_EVENT_HELPERS_H
+
+/* Define to 1 if you have the
+   <lv2/lv2plug.in/ns/ext/instance-access/instance-access.h> header file. */
+#undef HAVE_LV2_LV2PLUG_IN_NS_EXT_INSTANCE_ACCESS_INSTANCE_ACCESS_H
+
+/* Define to 1 if you have the <lv2/lv2plug.in/ns/ext/state/state.h> header
+   file. */
+#undef HAVE_LV2_LV2PLUG_IN_NS_EXT_STATE_STATE_H
+
+/* Define to 1 if you have the <lv2/lv2plug.in/ns/ext/urid/urid.h> header
+   file. */
+#undef HAVE_LV2_LV2PLUG_IN_NS_EXT_URID_URID_H
+
+/* Define to 1 if you have the <lv2/lv2plug.in/ns/ext/uri-map/uri-map.h>
+   header file. */
+#undef HAVE_LV2_LV2PLUG_IN_NS_EXT_URI_MAP_URI_MAP_H
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Define to 1 if you have the <signal.h> header file. */
+#undef HAVE_SIGNAL_H
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the `system' function. */
+#undef HAVE_SYSTEM
+
+/* Define to 1 if you have the <sys/ioctl.h> header file. */
+#undef HAVE_SYS_IOCTL_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have <sys/wait.h> that is POSIX.1 compatible. */
+#undef HAVE_SYS_WAIT_H
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
