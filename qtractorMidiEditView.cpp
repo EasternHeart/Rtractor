@@ -371,6 +371,7 @@ void qtractorMidiEditView::updatePixmap ( int cx, int cy )
 
 	qtractorMidiEvent *pEvent
 		= m_pEditor->seekEvent(iTickStart > t0 ? iTickStart - t0 : 0);
+
 	while (pEvent) {
 		const unsigned long t1 = t0 + pEvent->time();
 		if (t1 >= iTickEnd)
@@ -384,7 +385,8 @@ void qtractorMidiEditView::updatePixmap ( int cx, int cy )
 				x = pNode->pixelFromTick(t1) - x0 - cx;
 				int w1 = pNode->pixelFromTick(t2) - x0 - cx - x;
 				if (w1 < 5) w1 = 5;
-				if (m_pEditor->isNoteColor()) {
+
+                if (m_pEditor->isNoteColor()) {
 					hue = (128 - int(pEvent->note())) << 4;
 					if (m_pEditor->isValueColor())
 						sat = 64 + (int(pEvent->value()) >> 1);
@@ -392,10 +394,13 @@ void qtractorMidiEditView::updatePixmap ( int cx, int cy )
 				} else if (m_pEditor->isValueColor()) {
 					hue = (128 - int(pEvent->value())) << 1;
 					rgbNote.setHsv(hue, sat, val);
-				}
-				painter.fillRect(x, y, w1, h1, rgbFore);
+                }
+
+                painter.fillRect(x, y, w1, h1, rgbFore);
 				if (h1 > 3)
 					painter.fillRect(x + 1, y + 1, w1 - 4, h1 - 3, rgbNote);
+                painter.setPen(QColor(0, 0, 0));
+                painter.drawText(x + 2, y + 12, QString("a"));
 			}
 		}
 		pEvent = pEvent->next();
@@ -406,6 +411,7 @@ void qtractorMidiEditView::updatePixmap ( int cx, int cy )
 		const QBrush shade(QColor(0, 0, 0, 60));
 		painter.setPen(Qt::darkCyan);
 		x = pTimeScale->pixelFromFrame(pSession->loopStart()) - dx;
+
 		if (x >= w)
 			painter.fillRect(QRect(0, 0, w, h), shade);
 		else
@@ -420,7 +426,7 @@ void qtractorMidiEditView::updatePixmap ( int cx, int cy )
 		if (x < w) {
 			painter.fillRect(QRect(x, 0, w - x, h), shade);
 			painter.drawLine(x, 0, x, h);
-		}
+        }
 	}
 
 	// Draw punch boundaries, if applicable...
@@ -428,6 +434,7 @@ void qtractorMidiEditView::updatePixmap ( int cx, int cy )
 		const QBrush shade(QColor(0, 0, 0, 60));
 		painter.setPen(Qt::darkMagenta);
 		x = pTimeScale->pixelFromFrame(pSession->punchIn()) - dx;
+
 		if (x >= w)
 			painter.fillRect(QRect(0, 0, w, h), shade);
 		else
@@ -442,7 +449,7 @@ void qtractorMidiEditView::updatePixmap ( int cx, int cy )
 		if (x < w) {
 			painter.fillRect(QRect(x, 0, w - x, h), shade);
 			painter.drawLine(x, 0, x, h);
-		}
+        }
 	}
 }
 

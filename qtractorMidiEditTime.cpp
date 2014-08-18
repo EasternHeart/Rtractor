@@ -186,7 +186,7 @@ void qtractorMidiEditTime::updatePixmap ( int cx, int /*cy*/)
 				x + d, h - d,
 				x, h,
 				x, h - d);
-			painter.drawPolygon(polyg);
+            painter.drawPolygon(polyg);
 		}
 		x = pTimeScale->pixelFromFrame(pSession->loopEnd()) - dx;
 		if (x >= 0 && x < w) {
@@ -194,7 +194,7 @@ void qtractorMidiEditTime::updatePixmap ( int cx, int /*cy*/)
 				x, h - d,
 				x, h,
 				x - d, h - d);
-			painter.drawPolygon(polyg);
+            painter.drawPolygon(polyg);
 		}
 	}
 
@@ -211,7 +211,7 @@ void qtractorMidiEditTime::updatePixmap ( int cx, int /*cy*/)
 				x + d, h - d,
 				x, h,
 				x, h - d);
-			painter.drawPolygon(polyg);
+            painter.drawPolygon(polyg);
 		}
 		x = pTimeScale->pixelFromFrame(pSession->punchOut()) - dx;
 		if (x >= 0 && x < w) {
@@ -219,7 +219,7 @@ void qtractorMidiEditTime::updatePixmap ( int cx, int /*cy*/)
 				x, h - d,
 				x, h,
 				x - d, h - d);
-			painter.drawPolygon(polyg);
+            painter.drawPolygon(polyg);
 		}
 	}
 }
@@ -256,7 +256,7 @@ void qtractorMidiEditTime::resizeEvent ( QResizeEvent *pResizeEvent )
 // Draw the time scale.
 void qtractorMidiEditTime::drawContents ( QPainter *pPainter, const QRect& rect )
 {
-	pPainter->drawPixmap(rect, m_pixmap, rect);
+    pPainter->drawPixmap(rect, m_pixmap, rect);
 
 	// Draw special play/edit-head/tail headers...
 	int cx = qtractorScrollView::contentsX();
@@ -296,7 +296,7 @@ void qtractorMidiEditTime::drawContents ( QPainter *pPainter, const QRect& rect 
 		pPainter->setPen(Qt::red);
 		pPainter->setBrush(Qt::red);
 		pPainter->drawPolygon(polyg);
-	}
+    }
 }
 
 

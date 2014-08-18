@@ -37,7 +37,6 @@ HEADERS += config.h \
 	qtractorCurveFile.h \
 	qtractorCurveSelect.h \
 	qtractorDocument.h \
-	qtractorDssiPlugin.h \
 	qtractorEngine.h \
 	qtractorEngineCommand.h \
 	qtractorFifoBuffer.h \
@@ -48,7 +47,6 @@ HEADERS += config.h \
 	qtractorInstrument.h \
 	qtractorLadspaPlugin.h \
 	qtractorList.h \
-	qtractorLv2Plugin.h \
 	qtractorMessages.h \
 	qtractorMeter.h \
 	qtractorMidiBuffer.h \
@@ -81,7 +79,6 @@ HEADERS += config.h \
 	qtractorMixer.h \
 	qtractorMmcEvent.h \
 	qtractorMonitor.h \
-	qtractorNsmClient.h \
 	qtractorObserver.h \
 	qtractorObserverWidget.h \
 	qtractorOptions.h \
@@ -160,7 +157,6 @@ SOURCES += \
 	qtractorCurveCommand.cpp \
 	qtractorCurveFile.cpp \
 	qtractorCurveSelect.cpp \
-	qtractorDssiPlugin.cpp \
 	qtractorEngine.cpp \
 	qtractorEngineCommand.cpp \
 	qtractorFileList.cpp \
@@ -169,7 +165,6 @@ SOURCES += \
 	qtractorInsertPlugin.cpp \
 	qtractorInstrument.cpp \
 	qtractorLadspaPlugin.cpp \
-	qtractorLv2Plugin.cpp \
 	qtractorMessages.cpp \
 	qtractorMeter.cpp \
 	qtractorMidiBuffer.cpp \
@@ -199,7 +194,6 @@ SOURCES += \
 	qtractorMidiTimer.cpp \
 	qtractorMixer.cpp \
 	qtractorMmcEvent.cpp \
-	qtractorNsmClient.cpp \
 	qtractorObserver.cpp \
 	qtractorObserverWidget.cpp \
 	qtractorOptions.cpp \
