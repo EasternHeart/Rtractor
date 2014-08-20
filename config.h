@@ -5,7 +5,7 @@
 /* #undef CONFIG_DEBUG */
 
 /* Define if DSSI header is available. */
-#define CONFIG_DSSI 1
+/* #define CONFIG_DSSI 1 */
 
 /* Define if IEEE 32bit float optimizations are enabled. */
 #define CONFIG_FLOAT32 1
@@ -26,7 +26,7 @@
 /* #undef CONFIG_LIBLILV */
 
 /* Define if liblo is available. */
-#define CONFIG_LIBLO 1
+/* #define CONFIG_LIBLO 1 */
 
 /* Define if libmad is available. */
 #define CONFIG_LIBMAD 1
@@ -35,7 +35,7 @@
 /* #undef CONFIG_LIBRUBBERBAND */
 
 /* Define if libsamplerate is available. */
-#define CONFIG_LIBSAMPLERATE 1
+/* #define CONFIG_LIBSAMPLERATE 1 */
 
 /* Define if libsuil is available. */
 /* #undef CONFIG_LIBSUIL */
@@ -86,7 +86,7 @@
 /* #undef CONFIG_LV2_WORKER */
 
 /* Define if NSM support is available. */
-#define CONFIG_NSM 1
+/* #define CONFIG_NSM 1 */
 
 /* Default installation prefix. */
 #define CONFIG_PREFIX "/usr"

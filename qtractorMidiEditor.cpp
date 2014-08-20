@@ -1223,7 +1223,7 @@ void qtractorMidiEditor::setPlayHead ( unsigned long iPlayHead, bool bSyncView )
 	m_iPlayHead = iPlayHead;
 	int iPlayHeadX
 		= m_pTimeScale->pixelFromFrame(iPlayHead)
-		- m_pTimeScale->pixelFromFrame(m_iOffset);
+        - m_pTimeScale->pixelFromFrame(m_iOffset);
 
 	drawPositionX(m_iPlayHeadX, iPlayHeadX, bSyncView);
 }
@@ -3773,7 +3773,7 @@ void qtractorMidiEditor::updateDragResize (
 		// Fall thru...
 	default:
 		break;
-	}
+    }
 
 	m_posDelta.setX(dx);
 	m_posDelta.setY(dy);
