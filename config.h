@@ -35,7 +35,7 @@
 /* #undef CONFIG_LIBRUBBERBAND */
 
 /* Define if libsamplerate is available. */
-/* #define CONFIG_LIBSAMPLERATE 1 */
+#define CONFIG_LIBSAMPLERATE 1
 
 /* Define if libsuil is available. */
 /* #undef CONFIG_LIBSUIL */
